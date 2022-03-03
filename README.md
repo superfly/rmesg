@@ -1,4 +1,4 @@
-![Build Status](https://github.com/polyverse/rmesg/workflows/Build%20Status/badge.svg)
+[![Build Status](https://github.com/archisgore/rmesg/actions/workflows/build.yml/badge.svg)](https://github.com/archisgore/rmesg/actions/workflows/build.yml)
 
 # rmesg
 
