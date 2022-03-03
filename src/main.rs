@@ -87,7 +87,7 @@ fn nofollow(opts: Options) {
 fn parse_args() -> Options {
     let matches = Command::new("rmesg: A 'dmesg' port onto Rust")
         .version("0.2.0")
-        .author("Archis Gore <archis@polyverse.com>")
+        .author("Archis Gore <me@archisgore.com>")
         .about(
             "Reads (and prints) the kernel log buffer. Does not support all dmesg options (yet).",
         )
