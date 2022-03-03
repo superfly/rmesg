@@ -1,7 +1,7 @@
 /// rmesg - a rust-based dmesg implementation.
 /// This CLI builds on top of the eponymous crate and provides a command-line utility.
 ///
-use clap::{App, Arg};
+use clap::{Arg, Command};
 use futures_util::stream::StreamExt;
 use std::error::Error;
 
@@ -85,30 +85,30 @@ fn nofollow(opts: Options) {
 }
 
 fn parse_args() -> Options {
-    let matches = App::new("rmesg: A 'dmesg' port onto Rust")
+    let matches = Command::new("rmesg: A 'dmesg' port onto Rust")
         .version("0.2.0")
         .author("Archis Gore <archis@polyverse.com>")
         .about(
             "Reads (and prints) the kernel log buffer. Does not support all dmesg options (yet).",
         )
         .arg(
-            Arg::with_name("follow")
-                .short("f")
+            Arg::new("follow")
+                .short('f')
                 .help("When specified, follows logs (like tail -f)"),
         )
         .arg(
-            Arg::with_name("clear")
-                .short("c")
+            Arg::new("clear")
+                .short('c')
                 .help("Clear ring buffer after printing"),
         )
         .arg(
-            Arg::with_name("raw")
-                .short("r")
+            Arg::new("raw")
+                .short('r')
                 .help("Print raw data as it came from the source backend."),
         )
         .arg(
-            Arg::with_name("backend")
-                .short("b")
+            Arg::new("backend")
+                .short('b')
                 .takes_value(true)
                 .possible_values(&["klogctl", "devkmsg"])
                 .help("Select backend from where to read the logs. klog is the syslog/klogctl system call through libc. kmsg is the /dev/kmsg file."),

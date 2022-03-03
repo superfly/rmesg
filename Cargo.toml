@@ -1,13 +1,13 @@
 [package]
 name = "rmesg"
 version = "1.0.18"
-authors = ["Archis Gore <archis@polyverse.com>"]
+authors = ["Archis Gore <me@archisgore.com>"]
 edition = "2018"
 license = "Apache-2.0"
 categories = ["os", "command-line-utilities"]
 keywords = ["dmesg", "klogctl", "printk", "syslog"]
 readme = "README.md"
-repository = "https://github.com/polyverse/rmesg"
+repository = "https://github.com/archisgore/rmesg"
 description = """This is a fully Rust-based implementation of the popular dmesg Linux utility, giving
  programmatic access to the kernel log buffer."""
 
@@ -34,7 +34,7 @@ libc = "0.2.112"
 cfg-if = "1.0.0"
 enum-display-derive = "0.1.1"
 errno = "0.2.8"
-clap = "2.34.0"
+clap = "3.0.14"
 lazy_static = "1.4.0"
 regex = "1.5.4"
 strum = "0.23.0"
