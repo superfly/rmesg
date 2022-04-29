@@ -9,7 +9,7 @@ A 'dmesg' implementation in Rust
 ### Obtain the latest release binary
 
 ```.bash
-wget https://github.com/polyverse/rmesg/releases/latest/download/rmesg
+wget https://github.com/archisgore/rmesg/releases/latest/download/rmesg
 chmod a+x ./rmesg
 # Optionally move to a stable location
 mv ./rmesg /usr/local/bin
@@ -25,7 +25,7 @@ cargo install rmesg
 
 ```.bash
 rmesg: A 'dmesg' port onto Rust 1.0.0
-Archis Gore <archis@polyverse.com>
+Archis Gore <me@archisgore.com>
 Reads (and prints) the kernel log buffer. Does not support all dmesg options (yet).
 
 USAGE:
