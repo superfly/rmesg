@@ -4,6 +4,8 @@
 
 A 'dmesg' implementation in Rust
 
+As a crate: https://crates.io/crates/rmesg
+
 ## As a command-line utility
 
 ### Obtain the latest release binary
