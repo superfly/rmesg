@@ -110,7 +110,7 @@ fn parse_args() -> Options {
             Arg::new("backend")
                 .short('b')
                 .takes_value(true)
-                .possible_values(&["klogctl", "devkmsg"])
+                .possible_values(["klogctl", "devkmsg"])
                 .help("Select backend from where to read the logs. klog is the syslog/klogctl system call through libc. kmsg is the /dev/kmsg file."),
         )
         .get_matches();
